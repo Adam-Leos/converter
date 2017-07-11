@@ -1,0 +1,30 @@
+.converter {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  min-width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  border: 1px solid #1c0790;
+  border-radius: 10px;
+  &__box {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    position: relative; /* for currency select */
+  }
+  &__input {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    height: 30px;
+  }
+  &__span {
+    display: inline-block;
+    width: 100px;
+  }
+  &__select {
+    width: 65px;
+    height: 30px;
+    border: 1px solid #ccc;
+  }
+}
