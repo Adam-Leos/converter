@@ -1,15 +1,14 @@
 import './../libs/reset.css';
 import './../scss/global/global.scss';
 import './../scss/main.scss';
-import './converter/Converter';
 
-class Main {
+class Information {
   constructor() {
-    console.log('main inited');
+    console.log('information inited');
   }
 }
 
 document.addEventListener(
   'DOMContentLoaded',
-  () => new Main(),
+  () => new Information(),
 );

@@ -1,14 +1,16 @@
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 
 module.exports = {
   entry: {
     main: './src/js/main.js',
-    anotherPage: './src/js/anotherPage.js'
+    information: './src/js/information.js'
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist/js'),
     filename: '[name].bundle.js',
-    publicPath: './dist',
+    publicPath: './dist/js',
   },
   watch: true,
   devServer: {
@@ -42,18 +44,19 @@ module.exports = {
   		},
       {
         test: /\.(scss|css)$/,
-        use: [
-          {
-            loader: 'style-loader' // creates style nodes from JS strings
-          },
-          {
-            loader: 'css-loader' // translates CSS into CommonJS
-          },
-          {
-            loader: 'sass-loader' // compiles Sass to CSS
-          }
-        ]
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
+        })
       },
     ]
-  }
+  },
+  plugins: [
+    new ExtractTextPlugin({
+      filename: (getPath) => {
+        return getPath('../css/[name].bundle.css');
+      },
+      allChunks: true
+    })
+  ],
 };

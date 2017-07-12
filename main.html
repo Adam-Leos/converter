@@ -3,38 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Linter + webpack</title>
+    <link rel="stylesheet" href="./dist/css/main.bundle.css">
   </head>
-  <body>
-    <header class="header">
-
-    </header>
-    <main class="main">
-      <div class="converter">
-        <div class="converter__box">
-          <label class="converter__label">
-            <span class="converter__span">Exchange</span>
-            <input class="converter__input j-currency-entered" type="number" name="entered" value="">
-          </label>
-          <select class="converter__select j-currency-from" name="currency">
-            <option value="usd">USD</option>
-            <option value="rub">RUB</option>
-            <option value="eur">EUR</option>
-          </select>
-        </div>
-        <div class="converter__box">
-          <label class="converter__label">
-            <span class="converter__span">Into</span>
-            <input class="converter__input j-currency-calculated" type="number" name="calculated" value="">
-            <select class="converter__select j-currency-to" name="currency">
-              <option value="eur">EUR</option>
+  <body class="body">
+    <div class="g-container">
+      <header class="header">
+        <a class="header__link" href="./information.html">to information</a>
+      </header>
+      <main class="main">
+        <div class="converter">
+          <div class="converter__box">
+            <label class="converter__label">
+              <span class="converter__span">Exchange</span>
+              <input class="converter__input j-currency-entered" type="number" name="entered" value="">
+            </label>
+            <select class="converter__select j-currency-from" name="currency">
               <option value="usd">USD</option>
               <option value="rub">RUB</option>
+              <option value="eur">EUR</option>
             </select>
-          </label>
+          </div>
+          <div class="converter__box">
+            <label class="converter__label">
+              <span class="converter__span">Into</span>
+              <input class="converter__input j-currency-calculated" type="number" name="calculated" value="">
+              <select class="converter__select j-currency-to" name="currency">
+                <option value="eur">EUR</option>
+                <option value="usd">USD</option>
+                <option value="rub">RUB</option>
+              </select>
+            </label>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </div>
 
-    <script type="text/javascript" src="./dist/main.bundle.js"></script>
+    <script type="text/javascript" src="./dist/js/main.bundle.js"></script>
   </body>
 </html>
