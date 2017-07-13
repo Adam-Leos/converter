@@ -23,14 +23,22 @@ class Converter {
   async exchangeCurrency() {
     const calculatedInput = document.querySelector('.j-currency-calculated');
     const caluclatedCurrency = await this.calculateCurrency();
+    const roundedValue = Math.round(caluclatedCurrency * 100) / 100;
 
-    calculatedInput.value = caluclatedCurrency.toFixed(2);
+    calculatedInput.value = roundedValue;
   }
 
   async calculateCurrency() {
-    const enteredInput = document.querySelector('.j-currency-entered');
     const currencyFrom = document.querySelector('.j-currency-from').value;
     const currencyTo = document.querySelector('.j-currency-to').value;
+
+    if (currencyFrom === currencyTo) {
+      const currentValue = document.querySelector('.j-currency-entered').value;
+
+      return currentValue;
+    }
+
+    const enteredInput = document.querySelector('.j-currency-entered');
     const exchangeRatio = await this.fetchCurrencyRatio(currencyFrom, currencyTo);
 
     return enteredInput.value * exchangeRatio;
