@@ -8,6 +8,7 @@ module.exports = {
   },
   "rules": {
     "jsx-a11y/href-no-hash": "off",
+    "no-extra-parens": "error",
     "class-methods-use-this": "off",
     "id-length": 0,
     "indent": [2],

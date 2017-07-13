@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack -p",
+    "webpack": "webpack -p --hide-modules",
     "server": "webpack-dev-server"
   },
   "author": "",
