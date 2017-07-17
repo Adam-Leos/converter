@@ -5,7 +5,7 @@ import './converter/Converter';
 
 class Main {
   constructor() {
-    console.log(typeof undefined);
+    console.log(typeof null);
   }
 }
 
