@@ -1,24 +1,39 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+const buildEntryPoint = function(entryPoint) {
+  return [
+    'webpack-dev-server/client?http://localhost:3000',
+    'webpack/hot/only-dev-server',
+    entryPoint,
+  ]
+};
+const isProd = process.env.NODE_ENV === 'production';
+const cssDev = ['style-loader', 'css-loader', 'sass-loader'];
+const cssProd = ExtractTextPlugin.extract({
+  fallback: 'style-loader',
+  loader: ['css-loader', 'sass-loader'],
+  publicPath: './dist',
+});
+const cssConfig = isProd ? cssProd : cssDev;
 
 module.exports = {
   entry: {
-    main: './src/js/main.js',
-    information: './src/js/information.js'
+    main: isProd ? './src/js/main.js' : buildEntryPoint('./src/js/main.js'),
+    information: isProd ? './src/js/information.js' : buildEntryPoint('./src/js/information.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist/js'),
     filename: '[name].bundle.js',
-    publicPath: './dist/js',
+    publicPath: 'dist/js',
   },
-  watch: true,
   devServer: {
     open: true,
+    openPage: '',
     stats: 'errors-only',
     hot: true,
     inline: true,
+    port: 3000,
   },
   module: {
     rules: [
@@ -30,7 +45,7 @@ module.exports = {
           options: {
             presets: [
               'es2015',
-              'stage-0'
+              'stage-0',
             ],
             plugins: [
               'transform-runtime',
@@ -45,10 +60,7 @@ module.exports = {
   		},
       {
         test: /\.(scss|css)$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
-        })
+        use: cssConfig,
       },
     ]
   },
@@ -57,11 +69,13 @@ module.exports = {
       filename: (getPath) => {
         return getPath('../css/[name].bundle.css');
       },
-      allChunks: true
+      disable: !isProd,
+      allChunks: true,
     }),
     new webpack.ProvidePlugin({
       Promise: 'imports-loader?this=>global!exports-loader?global.Promise!es6-promise',
-      fetch: 'imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch'
-    })
+      fetch: 'imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch',
+    }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
 };
