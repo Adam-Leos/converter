@@ -8,6 +8,7 @@ const buildEntryPoint = function(entryPoint) {
     entryPoint,
   ]
 };
+console.log(process.env.NODE_ENV);
 const isProd = process.env.NODE_ENV === 'production';
 const cssDev = ['style-loader', 'css-loader', 'sass-loader'];
 const cssProd = ExtractTextPlugin.extract({
@@ -23,12 +24,12 @@ module.exports = {
     information: isProd ? './src/views/information/information.js' : buildEntryPoint('./src/views/information/information.js'),
   },
   output: {
-    path: path.resolve(__dirname, 'dist/js'),
+    path: path.resolve(__dirname, 'dist/js/'),
     filename: '[name].bundle.js',
-    publicPath: 'dist/js',
+    publicPath: 'dist/js/',
   },
   devServer: {
-    open: false,
+    open: true,
     openPage: '',
     stats: 'errors-only',
     hot: true,
@@ -61,6 +62,10 @@ module.exports = {
       {
         test: /\.(scss|css)$/,
         use: cssConfig,
+      },
+      {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        use: 'file-loader?name=[path][name].[ext]',
       },
     ]
   },

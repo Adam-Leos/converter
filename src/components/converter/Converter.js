@@ -10,12 +10,8 @@ class Converter {
   }
 
   bindEvents() {
-    document.querySelector('.j-currency-entered').addEventListener(
-      'input',
-      this.exchangeCurrency,
-    );
-    document.querySelector('.j-currency-from').addEventListener(
-      'change',
+    document.querySelector('.j-convert-currency').addEventListener(
+      'click',
       this.exchangeCurrency,
     );
   }

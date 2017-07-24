@@ -1,5 +1,4 @@
-import './../../global/reset.css';
-import './../../global/global.scss';
+import 'reset-css/reset.css';
 import './../main/main.scss'; // TODO do own styles
 import './../../components/converter/Converter';
 

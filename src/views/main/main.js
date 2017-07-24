@@ -1,5 +1,4 @@
-import './../../global/reset.css';
-import './../../global/global.scss';
+import 'reset-css/reset.css';
 import './main.scss';
 import './../../components/converter/Converter';
 

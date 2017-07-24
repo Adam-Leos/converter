@@ -3,8 +3,14 @@
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 50px;
-  border: 2px solid #1c0790;
-  border-radius: 10px 50px 10px 50px;
+  color: #fff;
+  font-family: Helvetica, Verdana, sans-serif;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 3, 95, 1) 0%,
+    rgba(125, 185, 232, 0) 100%
+  );
+  border-radius: 20px 100px 20px 100px;
   &__box {
     flex-basis: 100%;
     margin-bottom: 20px;
@@ -15,7 +21,7 @@
     padding: 5px;
     font-size: 14px;
     border: 1px solid #ccc;
-    height: 30px;
+    height: 24px;
   }
   &__span {
     display: inline-block;
@@ -23,9 +29,25 @@
   }
   &__select {
     width: 65px;
-    height: 30px;
+    height: 36px;
     background: #fff;
     border: 1px solid #ccc;
     vertical-align: top;
+  }
+  &__button {
+    margin: 0 auto;
+    padding: 10px 30px;
+    font-size: 16px;
+    background: linear-gradient(
+      135deg,
+      rgb(167, 182, 224) 0%,
+      #110b5f 100%
+    );
+    border: none;
+    border-radius: 10px 50px 10px 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
   }
 }
