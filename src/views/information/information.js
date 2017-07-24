@@ -1,6 +1,7 @@
-import './../libs/reset.css';
-import './../scss/global/global.scss';
-import './../scss/main.scss';
+import './../../global/reset.css';
+import './../../global/global.scss';
+import './../main/main.scss'; // TODO do own styles
+import './../../components/converter/Converter';
 
 class Information {
   constructor() {

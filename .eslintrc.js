@@ -15,5 +15,6 @@ module.exports = {
     "no-console": 0,
     "no-unused-vars": [1, {"vars": "local", "args": "none"}],
     "strict": 0,
+    "linebreak-style": 0,
   },
 }

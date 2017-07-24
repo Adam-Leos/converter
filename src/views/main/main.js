@@ -1,7 +1,7 @@
-import './../libs/reset.css';
-import './../scss/global/global.scss';
-import './../scss/main.scss';
-import './converter/Converter';
+import './../../global/reset.css';
+import './../../global/global.scss';
+import './main.scss';
+import './../../components/converter/Converter';
 
 class Main {
   constructor() {

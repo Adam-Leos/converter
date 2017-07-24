@@ -1,4 +1,4 @@
-import './../../scss/converter/converter.scss';
+import './converter.scss';
 
 class Converter {
   constructor() {
