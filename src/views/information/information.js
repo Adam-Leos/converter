@@ -1,6 +1,7 @@
 import 'reset-css/reset.css';
 import './../main/main.scss'; // TODO do own styles
-import './../../components/converter/Converter';
+import './../../components/copyright/copyright.scss';
+import './../../components/ratio-widget/RatioWidget';
 
 class Information {
   constructor() {
