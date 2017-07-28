@@ -1,0 +1,16 @@
+.ratio-widget {
+  margin: 0 auto;
+  border: 1px solid #000;
+  &__row {
+    border-top: 1px solid #000;
+  }
+  &__data {
+    padding: 10px;
+    &--head {
+      background-color: #ccc;
+    }
+    &--currency {
+      border-right: 1px solid #000;
+    }
+  }
+}

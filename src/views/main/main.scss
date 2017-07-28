@@ -16,9 +16,10 @@
 }
 .footer {
   &__image {
-    width: 900px;
+    max-width: 900px;
     height: 335px;
     margin: 0 auto;
     background: url(/src/img/currency.jpg) 0 0 no-repeat;
+    background-size: contain;
   }
 }

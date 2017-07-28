@@ -8,7 +8,6 @@ const buildEntryPoint = function(entryPoint) {
     entryPoint,
   ]
 };
-console.log(process.env.NODE_ENV);
 const isProd = process.env.NODE_ENV === 'production';
 const cssDev = ['style-loader', 'css-loader', 'sass-loader'];
 const cssProd = ExtractTextPlugin.extract({
@@ -36,6 +35,7 @@ module.exports = {
     inline: true,
     port: 3000,
   },
+  devtool:'source-map',
   module: {
     rules: [
       {
