@@ -26,7 +26,7 @@ class RatioWidget {
     let currencyRatioHtml = '';
 
     currencyToFill.forEach((currency) => {
-      ratioWidgetBodyHtml += `
+      currencyRatioHtml += `
         <tr class="ratio-widget__row">
           <td class="ratio-widget__data ratio-widget__data--currency">${currency}</td>
           <td class="ratio-widget__data">${USDRatio[currency]}</td>
