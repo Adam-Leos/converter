@@ -1,7 +1,13 @@
 .ratio-widget {
   width: 900px;
-  margin: 0 auto;
-  border: 1px solid #000;
+  margin: 0 auto 20px;
+  position: relative; /* for ratio panel */
+  &__table {
+    width: 100%;
+    border: 1px solid #000;
+    position: relative; /* for z-index */
+    z-index: 9;
+  }
   &__row {
     border-top: 1px solid #000;
   }
@@ -9,14 +15,65 @@
     padding: 10px;
     font-size: 22px;
     text-align: center;
+    background: #fff;
     &--head {
       background-color: #4f8ca9;
       font-size: 26px;
       color: #fff;
       text-transform: uppercase;
+      position: relative; /* for ratio arrow */
     }
     &--currency {
       border-right: 1px solid #000;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    padding: 10px;
+    right: 15px;
+    transform: translateY(-50%);
+    top: 50%;
+    cursor: pointer;
+    &::before {
+      content: '';
+      display: block;
+      padding: 4px;
+      border: solid #fff;
+      border-width: 0 3px 3px 0;
+      transition: transform 300ms;
+      transform: rotate(-45deg);
+    }
+    &.active  {
+        &::before {
+          transform: rotate(0deg);
+        }
+    }
+  }
+  &__panel {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #000;
+    border: 1px solid #000;
+    transition: transform 400ms, opacity 400ms;
+    z-index: 1;
+    opacity: 0;
+    &.active {
+      transform: translateX(100%);
+      opacity: 1;
+    }
+  }
+  &__label {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    user-select: none;
+  }
+  &__foot {
+    &.hidden {
+      display: none;
     }
   }
 }

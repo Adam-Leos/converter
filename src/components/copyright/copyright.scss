@@ -1,6 +1,8 @@
-@keyframes round {
-  0%   {transform: rotateZ(0);}
-  100% {transform: rotateZ(360deg);}
+@for $i from 1 through 25 {
+  @keyframes round#{$i} {
+    0% {transform: rotateZ(($i * 14.4) + deg);}
+    100% {transform: rotateZ((360 + ($i * 14.4)) + deg);}
+  }
 }
 
 .copyright {
@@ -9,19 +11,23 @@
   height: 400px;
   border-radius: 50%;
   margin: 0 auto;
-  animation: round 5s linear 2s infinite;
+  transform: translateX(50%);
   &__letter {
     font: 26px Monaco, MonoSpace;
     height: 200px;
-    position: absolute;
     width: 20px;
+    position: absolute;
     left: 0;
     top: 0;
     transform-origin: bottom center;
-    @for $i from 1 through 100 {
+    @for $i from 1 through 25 {
       &--#{$i} {
-        transform: rotate(($i*6)+deg);
+        transform: rotate(($i * 14.4) + deg);
+        animation: round#{$i} 10s linear infinite;
       }
+    }
+    &--shape {
+      border: 1px solid black;
     }
   }
 }

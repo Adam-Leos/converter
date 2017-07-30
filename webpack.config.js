@@ -20,7 +20,7 @@ const cssConfig = isProd ? cssProd : cssDev;
 module.exports = {
   entry: {
     main: isProd ? './src/views/main/main.js' : buildEntryPoint('./src/views/main/main.js'),
-    information: isProd ? './src/views/information/information.js' : buildEntryPoint('./src/views/information/information.js'),
+    contacts: isProd ? './src/views/contacts/contacts.js' : buildEntryPoint('./src/views/contacts/contacts.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist/js/'),

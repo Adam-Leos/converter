@@ -33,7 +33,7 @@ class Converter {
     }
 
     const enteredInput = document.querySelector('.j-currency-entered');
-    const rates = await RatioWidget.fetchCurrencyRatio(currencyFrom);
+    const rates = await RatioWidget.getCurrencyRatio(currencyFrom);
 
     return enteredInput.value * rates[currencyTo];
   }
