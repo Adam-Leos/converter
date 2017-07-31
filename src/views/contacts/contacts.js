@@ -1,5 +1,5 @@
 import 'reset-css/reset.css';
-import './../main/main.scss'; // TODO do own styles
+import './contacts.scss';
 import './../../components/copyright/copyright.scss';
 
 class Information {
