@@ -17,5 +17,6 @@ module.exports = {
     "strict": 0,
     "linebreak-style": 0,
     "consistent-return": "off",
+    "no-trailing-spaces": "off",
   },
 }
