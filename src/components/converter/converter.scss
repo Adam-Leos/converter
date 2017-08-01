@@ -1,7 +1,7 @@
 .converter {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   padding: 50px;
   color: #fff;
   font-family: Helvetica, Verdana, sans-serif;
@@ -10,7 +10,7 @@
     rgba(0, 3, 95, 1) 0%,
     rgba(125, 185, 232, 0) 100%
   );
-  border-radius: 20px 100px 20px 100px;
+  border-radius: 300px 60px 300px 60px;
   &__box {
     flex-basis: 100%;
     margin-bottom: 20px;
@@ -42,8 +42,8 @@
     font-size: 20px;
     background: linear-gradient(
       135deg,
-      rgb(167, 182, 224) 0%,
-      #110b5f 100%
+      #7595f0 0%,
+      #09081c 100%
     );
     border: none;
     border-radius: 10px 50px 10px 50px;
@@ -57,3 +57,6 @@
     }
   }
 }
+
+/* responsive */
+@import 'converter-responsive';

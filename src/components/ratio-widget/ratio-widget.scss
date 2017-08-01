@@ -1,5 +1,5 @@
 .ratio-widget {
-  width: 900px;
+  max-width: 860px;
   margin: 0 auto 20px;
   position: relative; /* for ratio panel */
   &__table {
@@ -22,6 +22,7 @@
       color: #fff;
       text-transform: uppercase;
       position: relative; /* for ratio arrow */
+      padding-right: 40px;
     }
     &--currency {
       border-right: 1px solid #000;
@@ -77,3 +78,6 @@
     }
   }
 }
+
+/* responsive */
+@import 'ratio-widget-responsive';

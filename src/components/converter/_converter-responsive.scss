@@ -1,0 +1,22 @@
+@media screen and (max-width: 620px) {
+  .converter {
+    &__span {
+      display: block;
+      margin: 0 auto 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .converter {
+    padding: 90px;
+    justify-content: center;
+    &__label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    &__input {
+      font-size: 16px;
+    }
+  }
+}

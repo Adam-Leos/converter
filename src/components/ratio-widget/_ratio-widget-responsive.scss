@@ -1,0 +1,32 @@
+@media screen and (max-width: 1024px) {
+  .ratio-widget {
+    font-size: 0;
+    &__panel {
+      &.active {
+        transform: translateY(-100%);
+      }
+    }
+    &__label {
+      display: inline-block;
+      border-bottom: none;
+      border-right: 1px solid #000;
+      font-size: 20px;
+    }
+    &__arrow {
+      &.active {
+        &::before {
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ratio-widget {
+    &__label {
+      padding: 10px 5px;
+      font-size: 16px;
+    }
+  }
+}

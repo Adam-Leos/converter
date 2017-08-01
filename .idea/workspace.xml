@@ -5,9 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78d64df7-8c7f-4a46-9afb-f2a300a29ea9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.eslintrc.js" afterPath="$PROJECT_DIR$/.eslintrc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/converter/_converter-responsive.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/copyright/_copyright-responsive.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ratio-widget/_ratio-widget-responsive.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/contacts.bundle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/contacts.bundle.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/main.bundle.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/main.bundle.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/contacts.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/contacts.bundle.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/main.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/main.bundle.js.map" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ratio-widget/RatioWidget.js" afterPath="$PROJECT_DIR$/src/components/ratio-widget/RatioWidget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/converter/converter.scss" afterPath="$PROJECT_DIR$/src/components/converter/converter.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/copyright/copyright.scss" afterPath="$PROJECT_DIR$/src/components/copyright/copyright.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ratio-widget/ratio-widget.scss" afterPath="$PROJECT_DIR$/src/components/ratio-widget/ratio-widget.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/contacts/contacts.scss" afterPath="$PROJECT_DIR$/src/views/contacts/contacts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/main/main.scss" afterPath="$PROJECT_DIR$/src/views/main/main.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/contacts.html" afterPath="$PROJECT_DIR$/views/contacts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/main.html" afterPath="$PROJECT_DIR$/views/main.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,29 +41,41 @@
       <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="64" column="55" lean-forward="false" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="55" />
+            <state relative-caret-position="866">
+              <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
               <folding>
-                <marker date="1501482366740" expanded="true" signature="30:70" ph="..." />
+                <marker date="1501582029964" expanded="true" signature="30:70" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RatioWidget.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/ratio-widget/RatioWidget.js">
+      <file leaf-file-name="_copyright-responsive.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/copyright/_copyright-responsive.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
-              <folding>
-                <marker date="1501574067856" expanded="true" signature="2137:2329" ph="..." />
-                <marker date="1501574067856" expanded="true" signature="2409:2497" ph="..." />
-                <marker date="1501574067856" expanded="true" signature="2409:2498" ph="..." />
-                <marker date="1501574067856" expanded="true" signature="2409:2526" ph="..." />
-                <marker date="1501574067856" expanded="true" signature="2409:2527" ph="..." />
-                <marker date="1501574067856" expanded="true" signature="2409:2604" ph="..." />
-                <marker date="1501574067856" expanded="true" signature="3886:4078" ph="..." />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacts.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/contacts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="copyright.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/copyright/copyright.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="741">
+              <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -76,19 +104,23 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/components/converter/Converter.js" />
-        <option value="$PROJECT_DIR$/views/main.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/components/ratio-widget/ratio-widget.scss" />
-        <option value="$PROJECT_DIR$/src/views/main/main.scss" />
-        <option value="$PROJECT_DIR$/src/components/converter/converter.scss" />
         <option value="$PROJECT_DIR$/views/information.html" />
         <option value="$PROJECT_DIR$/src/views/information/information.js" />
-        <option value="$PROJECT_DIR$/src/components/copyright/copyright.scss" />
-        <option value="$PROJECT_DIR$/views/contacts.html" />
-        <option value="$PROJECT_DIR$/src/views/contacts/contacts.scss" />
         <option value="$PROJECT_DIR$/src/views/contacts/contacts.js" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
         <option value="$PROJECT_DIR$/src/components/ratio-widget/RatioWidget.js" />
+        <option value="$PROJECT_DIR$/src/views/main/main.scss" />
+        <option value="$PROJECT_DIR$/src/components/ratio-widget/ratio-widget.scss" />
+        <option value="$PROJECT_DIR$/src/components/ratio-widget/_ratio-widget-responsive.scss" />
+        <option value="$PROJECT_DIR$/src/components/converter/converter.scss" />
+        <option value="$PROJECT_DIR$/views/main.html" />
+        <option value="$PROJECT_DIR$/src/components/converter/_converter-responsive.scss" />
+        <option value="$PROJECT_DIR$/views/contacts.html" />
+        <option value="$PROJECT_DIR$/src/views/contacts/_contacts-responsive.scss" />
+        <option value="$PROJECT_DIR$/src/views/contacts/contacts.scss" />
+        <option value="$PROJECT_DIR$/src/components/copyright/_copyright-responsive.scss" />
+        <option value="$PROJECT_DIR$/src/components/copyright/copyright.scss" />
       </list>
     </option>
   </component>
@@ -349,12 +381,12 @@
       <option name="presentableId" value="Default" />
       <updated>1501063807224</updated>
       <workItem from="1501063808674" duration="11945000" />
-      <workItem from="1501482689521" duration="7839000" />
+      <workItem from="1501482689521" duration="10527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19784000" />
+    <option name="totallyTimeSpent" value="22472000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1922" height="1054" extended-state="6" />
@@ -406,13 +438,13 @@
         <state relative-caret-position="594">
           <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding>
-            <marker date="1501574067856" expanded="true" signature="2137:2329" ph="..." />
-            <marker date="1501574067856" expanded="true" signature="2409:2497" ph="..." />
-            <marker date="1501574067856" expanded="true" signature="2409:2498" ph="..." />
-            <marker date="1501574067856" expanded="true" signature="2409:2526" ph="..." />
-            <marker date="1501574067856" expanded="true" signature="2409:2527" ph="..." />
-            <marker date="1501574067856" expanded="true" signature="2409:2604" ph="..." />
-            <marker date="1501574067856" expanded="true" signature="3886:4078" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="2133:2325" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="2405:2493" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="2405:2494" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="2405:2522" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="2405:2523" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="2405:2600" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="3882:4074" ph="..." />
           </folding>
         </state>
       </provider>
@@ -486,69 +518,11 @@
     <entry file="file://$PROJECT_DIR$/src/views/information/information.scss" />
     <entry file="file://$PROJECT_DIR$/src/views/information/information.js" />
     <entry file="file://$PROJECT_DIR$/views/information.html" />
-    <entry file="file://$PROJECT_DIR$/src/components/converter/converter.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ratio-widget/ratio-widget.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/main/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/copyright/copyright.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/contacts/contacts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/contacts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/converter/Converter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="24" column="27" lean-forward="false" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="64" column="55" lean-forward="false" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="55" />
-          <folding>
-            <marker date="1501482366740" expanded="true" signature="30:70" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -565,7 +539,7 @@
         <state relative-caret-position="378">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#29#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -578,19 +552,109 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/main/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ratio-widget/RatioWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+        <state relative-caret-position="1161">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
-            <marker date="1501574067856" expanded="true" signature="2137:2329" ph="..." />
-            <marker date="1501574067856" expanded="true" signature="2409:2497" ph="..." />
-            <marker date="1501574067856" expanded="true" signature="2409:2498" ph="..." />
-            <marker date="1501574067856" expanded="true" signature="2409:2526" ph="..." />
-            <marker date="1501574067856" expanded="true" signature="2409:2527" ph="..." />
-            <marker date="1501574067856" expanded="true" signature="2409:2604" ph="..." />
-            <marker date="1501574067856" expanded="true" signature="3886:4078" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="2133:2325" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="2405:2493" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="2405:2494" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="2405:2522" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="2405:2523" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="2405:2600" ph="..." />
+            <marker date="1501574085928" expanded="true" signature="3882:4074" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/converter/_converter-responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/contacts/_contacts-responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/contacts/contacts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ratio-widget/_ratio-widget-responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="27" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="31" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/copyright/_copyright-responsive.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/converter/converter.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ratio-widget/ratio-widget.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="82" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="866">
+          <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding>
+            <marker date="1501582029964" expanded="true" signature="30:70" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/copyright/copyright.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="32" column="18" lean-forward="false" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
