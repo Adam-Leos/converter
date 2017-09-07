@@ -1,12 +1,13 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const buildEntryPoint = function(entryPoint) {
+
+const buildEntryPoint = function buildEntryPoint(entryPoint) {
   return [
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
     entryPoint,
-  ]
+  ];
 };
 const isProd = process.env.NODE_ENV === 'production';
 const cssDev = ['style-loader', 'css-loader', 'sass-loader'];
@@ -16,13 +17,13 @@ const cssProd = ExtractTextPlugin.extract({
 });
 const cssConfig = isProd ? cssProd : cssDev;
 const imgOptionsProd = {
-    name: '[name]-[hash:12].[ext]',
-    outputPath: '/img/',
-    publicPath: path.resolve(__dirname, 'dist/'),
+  name: '[name]-[hash:12].[ext]',
+  outputPath: '/img/',
+  publicPath: path.resolve(__dirname, 'dist/'),
 };
 const imgOptionsDev = {
-    name: '[name]-[hash:8].[ext]',
-    outputPath: 'img/',
+  name: '[name]-[hash:8].[ext]',
+  outputPath: 'img/',
 };
 const imgOptions = isProd ? imgOptionsProd : imgOptionsDev;
 
@@ -44,7 +45,7 @@ module.exports = {
     inline: true,
     port: 8080,
   },
-  devtool:'source-map',
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -61,13 +62,13 @@ module.exports = {
               'transform-runtime',
             ],
           },
-        }
+        },
       },
       {
-  			test: /\.js$/,
-  			exclude: /(node_modules|bower_components)/,
-  			use: 'eslint-loader',
-  		},
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: 'eslint-loader',
+      },
       {
         test: /\.(scss|css)$/,
         use: cssConfig,
@@ -96,8 +97,8 @@ module.exports = {
                   },
                   {
                     removeEmptyAttrs: false,
-                  }
-                ]
+                  },
+                ],
               },
               gifsicle: {
                 optimizationLevel: 7,
@@ -111,13 +112,11 @@ module.exports = {
           },
         ],
       },
-    ]
+    ],
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: (getPath) => {
-        return getPath('css/[name].bundle.css');
-      },
+      filename: getPath => getPath('css/[name].bundle.css'),
       disable: !isProd,
       allChunks: true,
     }),
